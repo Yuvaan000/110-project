@@ -1,0 +1,58 @@
+
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+  <title>Intro p5.js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    </head>
+<center>
+<body>
+    <div id="header_div" class="btn btn-info">
+<h3 >GESTURE WEB APP</h3>
+&#9996;
+&#128076;
+&#128077;
+
+</div>
+<br>
+<h3> Take a selfie of gesture </h3>
+
+<div class="col-md-4 col-sm-12 col-xs-12">
+    <label> Webcam View</label>
+    <br>
+    <div id="camera"></div>
+    <br><br>
+    <button onclick="takesnapshots()" class="btn btn-warning"> Capture Image </button>
+   </div>
+   
+   <div class="col-md-4 col-sm-12 col-xs-12">
+    <label class="btn btn-warning"> Prediction 1 </label>
+    <div class="emotion_name" id="result_emotion_name"> </div>
+    <div class="emoji" id="update_emoji"> </div>
+    
+    <label class="btn btn-warning"> Prediction 2</label>
+    <div class="emotion_name" id="result_emotion_name2"> </div>
+    <div class="emoji" id="update_emoji2"> </div>
+    </div>
+
+   <div class="col-md-4 col-sm-12 col-xs-12">
+    <label>Snapshot - </label>
+  <br>
+  <div id="result"></div>
+  <br><br>
+  <button class="btn btn-success" onclick="check()"> Identify Emoji </button>
+</div>
+
+
+</center>
+
+</div>
+</center>
+</body>
+</html>
